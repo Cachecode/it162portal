@@ -1,0 +1,245 @@
+html {
+    background-color: #ccc;
+    width: 80%;
+    margin: auto;
+}
+
+main.wrapper {
+    background-color: #fff;
+    overflow: auto;
+    border-radius: 12px;
+}
+
+.miniwrapper {
+    background-color: rgb(197, 197, 197);
+    overflow: auto;
+    margin: 10px;
+    border: solid rgb(129, 129, 129);
+    border-radius: 10px;
+    box-shadow: rgb(187, 187, 187) 0 0 5px 0px;
+    border-width: 1px;
+    padding: 10px;
+}
+
+h1>a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Space Mono', monospace;
+    font-size: 50%;
+    font-stretch: ultra-expanded;
+}
+
+h2 {
+    margin-left: auto;
+}
+
+.header {
+    background: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-top: solid;
+}
+
+.logo {
+    color: #737373;
+    margin-left: 2%;
+    width: 58px;
+    /* border: solid; */
+    border-width: 3px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px 3px rgb(255 255 255 / 38%);
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 4px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+
+/* Embed Responsively Rules! */
+
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+}
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+.footerbox {
+    background-color: rgb(179, 179, 179);
+    height: 100px;
+    padding: 1%;
+    box-shadow: black 1px 1px 4px 0px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.textbox {
+    background-color: #ccc;
+    padding: 5%;
+    border-radius: 7px;
+    margin-top: 10px;
+    box-shadow: rgb(143, 142, 142) 0 0 5px 2px;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+}
+
+
+/* START RESPONSIVE STYLES */
+
+
+/* DESKTOP */
+
+@media all and (min-width:1400px) {
+    main.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    section {
+        width: 33%;
+        float: left;
+        padding: 3%;
+    }
+    aside {
+        width: 34%;
+        float: right;
+        padding: 5%;
+    }
+    img.desktop {
+        width: 431px;
+        display: inline-block;
+        margin-bottom: 20px;
+        filter: brightness(350%);
+    }
+    img.tablet,
+    img.phone {
+        display: none;
+    }
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        background-color: #555;
+        color: #ccc;
+    }
+}
+
+
+/* TABLET */
+
+@media all and (min-width:737px) and (max-width:1399px) {
+    .logo {
+        margin-right: 2%;
+    }
+    section {
+        width: 44%;
+        float: left;
+        margin-left: 5%;
+    }
+    .miniwrapper {
+        background-color: rgb(235, 231, 231);
+        overflow: auto;
+        margin: 10px;
+        border: rgb(255, 255, 255);
+        border: solid;
+        border-radius: 10px;
+        box-shadow: rgb(143, 142, 142) 0 0 5px 2px;
+        border-width: 0px;
+        padding: 10px;
+    }
+    aside {
+        width: 35%;
+        float: right;
+        margin-right: 10%;
+        margin-bottom: 5%;
+    }
+    img.tablet {
+        width: 100%;
+        display: inline-block;
+        padding: 5%;
+    }
+    img.desktop,
+    img.phone {
+        display: none;
+        padding: 5%;
+    }
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        background-color: rgb(53, 51, 51);
+        color: rgb(190, 189, 189);
+    }
+}
+
+
+/* PHONE */
+
+@media all and (max-width:736px) {
+    h1 {
+        margin: 10%;
+        text-align: center;
+    }
+    .logo {
+        margin-right: 10%;
+        float: left;
+    }
+    .miniwrapper {
+        background-color: rgb(235, 231, 231);
+        overflow: auto;
+        margin: 10px;
+        border: rgb(255, 255, 255);
+        border: solid;
+        border-radius: 10px;
+        box-shadow: rgb(187, 187, 187) 0 0 10px 4px;
+        border-width: 0px;
+        padding: 10px;
+    }
+    img.phone {
+        width: 45%;
+        display: inline-block;
+        padding: 2%;
+        float: left;
+    }
+    img.tablet,
+    img.desktop {
+        display: none;
+        padding: 5%;
+    }
+    section {
+        margin: 10%;
+        float: left;
+    }
+    aside {
+        margin: 10%;
+        float: right;
+    }
+}

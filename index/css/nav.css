@@ -1,0 +1,110 @@
+    @charset "utf-8";
+    /* CSS Document */
+    /* Remove margins and padding from the list, and add a black background color */
+    
+    ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    /* Float the list items side by side */
+    
+    ul.topnav li {
+        float: left;
+        margin-left: auto;
+    }
+    /* Style the links inside the list items */
+    
+    ul.topnav li a {
+        display: inline-block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 9px 12px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 13px;
+        margin: 10px;
+        box-shadow: 0 1px 10px 2px rgb(201 201 201 / 20%);
+        transition: 0.2s;
+        border-radius: 7px;
+        color: rgb(201, 195, 195);
+    }
+    /* quick links on homepage */
+    
+    ul.quick-link {
+        background-color: #333;
+        padding: 5%px;
+        border-radius: 7px;
+        text-decoration: none;
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    a.quick-link {
+        color: azure;
+        text-decoration: none;
+        background-color: #333;
+        border-radius: 7px;
+        display: flex;
+        padding: 9px;
+        box-shadow: 0 1px 10px 2px rgb(201 201 201 / 20%);
+        transition: 0.3s;
+        font-size: 13px;
+    }
+    
+    ul.quick-link li a:hover {
+        background-color: #555;
+    }
+    
+    li {
+        display: inline-block;
+        padding: 1%;
+        width: auto;
+    }
+    /* Change background color of links on hover */
+    
+    ul.topnav li a:hover {
+        background-color: #555;
+    }
+    /* Hide the list item that contains the link that should open and close the topnav on small screens */
+    
+    ul.topnav li.icon {
+        display: none;
+        width: 10%;
+        margin: auto;
+    }
+    /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+    
+    @media screen and (max-width:680px) {
+        ul.topnav li:not(:first-child) {
+            display: none;
+        }
+        ul.topnav li.icon {
+            float: right;
+            display: inline-block;
+            margin-right: 9%;
+        }
+    }
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+    
+    @media screen and (max-width:680px) {
+        ul.topnav.responsive {
+            position: relative;
+        }
+        ul.topnav.responsive li.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        ul.topnav.responsive li {
+            float: none;
+            display: inline;
+        }
+        ul.topnav.responsive li a {
+            display: block;
+            text-align: center;
+            width: 54%;
+        }
+    }
