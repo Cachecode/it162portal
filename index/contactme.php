@@ -42,9 +42,7 @@
             </nav>
         </header>
 
-        <div class="for" id='form'>
-
-
+        <div class="formbox">
 
             <?php
 
@@ -57,7 +55,7 @@
 
             ?>
         </div>
-
+        </section>
 
 
 
