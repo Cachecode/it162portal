@@ -11,6 +11,9 @@ form>div {
     margin-top: 10px;
     box-shadow: rgb(143, 142, 142) 0 0 5px 2px;
     margin: 1em;
+    width: 33%;
+    float: left;
+    padding: 3%;
 }
 
 
