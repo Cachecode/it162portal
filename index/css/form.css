@@ -50,6 +50,10 @@ form>div {
         padding: 5%;
         text-align-last: center;
     }
+
+
+
+    
     /* TABLET */
     @media all and (min-width:737px) and (max-width:1399px) {
         .formbox {
@@ -74,6 +78,10 @@ form>div {
             text-align-last: center;
         }
     }
+
+
+
+
     /* PHONE */
     @media all and (max-width:736px) {
         .formbox {
@@ -98,6 +106,11 @@ form>div {
             text-align-last: center;
         }
     }
+
+
+
+
+
     /* writes to small text above reCAPTCHA upon failure */
     .dateFeedback {
         font-style: italic;
