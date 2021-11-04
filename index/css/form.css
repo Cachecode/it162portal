@@ -1,150 +1,138 @@
+body {
+    font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+    background: #3AAFAB;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container * {
+    box-sizing: border-box;
+}
+
+.flex-outer,
+.flex-inner {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;
+}
+
+.flex-outer>li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.flex-outer>li>label,
+.flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+
+.flex-outer>li>label+*,
+.flex-inner {
+    flex: 1 0 220px;
+}
+
+.flex-outer li p {
+    margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+    padding: 15px;
+    border: none;
+}
+
+.flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+}
+
+.flex-inner li {
+    width: 100px;
+}
+
+
 /* start reCAPTCHA styles */
 
 form>div {
     margin: 1em;
 }
 
-.formbox {
-    margin-top: 1em;
-    box-shadow: rgb(143 142 142) 0 0 5px 2px;
-    background-color: #333;
-    padding: 5px;
-    border-radius: 7px;
-    text-decoration: none;
-    list-style-type: none;
-    color: rgb(255, 255, 255);
+
+/* writes to small text above reCAPTCHA upon failure */
+
+.dateFeedback {
+    font-style: italic;
+    font-size: 70%;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
 }
 
+input:required {
+    border: 1px solid rgb(0, 0, 0);
+    width: -webkit-fill-available;
+}
 
-/* START RESPONSIVE STYLES */
+input:optional,
+textarea:optional {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    width: -webkit-fill-available;
+}
 
+input[type="submit"],
+input[type="button"] {
+    background-color: #fff;
+    border-radius: 4px;
+    border: solid 1px #ccc;
+    padding: 0.3em 0.5em;
+}
 
-/* DESKTOP */
+fieldset {
+    border: 1px solid #ccc;
+    max-width: 350px;
+}
 
-@media all and (min-width:1400px) {
-    .formbox {
-        margin-top: 1em;
-        box-shadow: rgb(143 142 142) 0 0 5px 2px;
-        background-color: #333;
-        padding: 5px;
-        border-radius: 7px;
-        text-decoration: none;
-        list-style-type: none;
-        color: rgb(255, 255, 255);
-    }
-    .formsection {
-        width: 33%;
-        float: left;
-        padding: 3%;
-    }
-    .contactlogo {
-        color: #737373;
-        width: 52%;
-        border-width: 17px;
-        border-radius: 83%;
-        box-shadow: 0px 0px 15px 3px #323232;
-    }
-    .formaside {
-        width: 34%;
-        float: right;
-        padding: 5%;
-        text-align-last: center;
-    }
-
-
-
-    
-    /* TABLET */
-    @media all and (min-width:737px) and (max-width:1399px) {
-        .formbox {
-            margin-top: 1em;
-            box-shadow: rgb(143 142 142) 0 0 5px 2px;
-            background-color: #333;
-            padding: 5px;
-            border-radius: 7px;
-            text-decoration: none;
-            list-style-type: none;
-            color: rgb(255, 255, 255);
-        }
-        .formsection {
-            width: 33%;
-            float: left;
-            padding: 3%;
-        }
-        .formaside {
-            width: 34%;
-            float: right;
-            padding: 5%;
-            text-align-last: center;
-        }
-    }
-
-
-
-
-    /* PHONE */
-    @media all and (max-width:736px) {
-        .formbox {
-            margin-top: 1em;
-            box-shadow: rgb(143 142 142) 0 0 5px 2px;
-            background-color: #333;
-            padding: 5px;
-            border-radius: 7px;
-            text-decoration: none;
-            list-style-type: none;
-            color: rgb(255, 255, 255);
-        }
-        .formsection {
-            width: 33%;
-            float: left;
-            padding: 3%;
-        }
-        .formaside {
-            width: 34%;
-            float: right;
-            padding: 5%;
-            text-align-last: center;
-        }
-    }
-
-
-
-
-
-    /* writes to small text above reCAPTCHA upon failure */
-    .dateFeedback {
-        font-style: italic;
-        font-size: 70%;
-        font-weight: bold;
-        color: rgb(0, 0, 0);
-    }
-    input:required {
-        border: 1px solid rgb(0, 0, 0);
-        width: -webkit-fill-available;
-    }
-    input:optional,
-    textarea:optional {
-        background-color: #f1f1f1;
-        border: 1px solid #ccc;
-        width: -webkit-fill-available;
-    }
-    input[type="submit"],
-    input[type="button"] {
-        background-color: #fff;
-        border-radius: 4px;
-        border: solid 1px #ccc;
-        padding: 0.3em 0.5em;
-    }
-    fieldset {
-        border: 1px solid #ccc;
-        max-width: 350px;
-    }
-    legend {
-        margin-left: 0.5em;
-        padding: 0.2em 0.5em;
-        border-left: 1px solid #ccc;
-        border-right: 1px solid #ccc;
-    }
+legend {
+    margin-left: 0.5em;
+    padding: 0.2em 0.5em;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 
 

@@ -131,10 +131,32 @@ h3 {
         float: left;
         padding: 3%;
     }
-    aside {
+    .formbox {
+        margin: 5% 5%;
+        box-shadow: rgb(143 142 142) 0 0 5px 2px;
+        background-color: #333;
+        padding: 1em;
+        border-radius: 7px;
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(255, 255, 255);
+        width: fit-content;
+    }
+    .formsection {
+        width: 33%;
+        float: left;
+        padding: 3%;
+    }
+    .formaside {
         width: 34%;
         float: right;
         padding: 5%;
+        text-align-last: center;
+    }
+    aside {
+        width: 35%;
+        float: right;
+        margin: 5% 5%;
     }
     img.desktop {
         width: 431px;
@@ -161,9 +183,9 @@ h3 {
         margin-right: 2%;
     }
     section {
-        width: 44%;
+        width: 33%;
         float: left;
-        margin-left: 5%;
+        margin: 5% 5%;
     }
     .miniwrapper {
         background-color: rgb(235, 231, 231);
@@ -176,11 +198,21 @@ h3 {
         border-width: 0px;
         padding: 10px;
     }
+    .formbox {
+        margin: 5% 5%;
+        box-shadow: rgb(143 142 142) 0 0 5px 2px;
+        background-color: #333;
+        padding: 1em;
+        border-radius: 7px;
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(255, 255, 255);
+        width: fit-content;
+    }
     aside {
-        width: 35%;
+        width: 33%;
         float: right;
-        margin-right: 10%;
-        margin-bottom: 5%;
+        margin: 5% 5%;
     }
     img.tablet {
         width: 100%;

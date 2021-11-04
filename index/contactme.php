@@ -32,8 +32,9 @@
         </header>
 
         <section class='formsection'>
+
             <div class="formbox">
-                <h1>contact</h1>
+            
 
                 <?php
 
@@ -45,8 +46,14 @@
                 echo loadContact('simple.php');
 
                 ?>
+                
             </div>
 
+
+        </section>
+
+        <aside class='formaside'>
+            
             <div class="github-card" data-github="Cachecode" data-width="100%" data-theme="default"></div>
             <ul class="textbox quick-link nav-item">
                 <small>
@@ -78,17 +85,6 @@
                 </li>
                 </li>
             </ul>
-        </section>
-
-        <aside class='formaside'>
-            <h2>Right Column</h2>
-
-            <a href="index.php"><img src="images/logo.png" class="contactlogo floating" alt="Home Logo"></i>
-
-
-                <p>Lorem Ipsum place holder text goes here for now</p>
-                <p>Lorem Ipsum place holder text goes here for now</p>
-
 
 
         </aside>
