@@ -1,9 +1,9 @@
-
+<?php include 'php/portal-config.php' ?>
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>Matthieu's IT162 Portal</title>
+    <title> <?= $title ?> </title>
     <meta name="viewport" content="width=device-width" />
     <meta name="robots" content="noindex,nofollow" />
     <meta charset="utf-8">
@@ -18,10 +18,11 @@
     <main class="wrapper">
         <header class="header">
             <h1>
-                <a href="index.php"><img src="images/logo.png" class="logo floating" alt="Home Logo"></i> Matthieu Felker - IT162 Portal</a>
+                <a href="index.php"><img src=<?= $logo ?> class="logo floating" alt="Home Logo"></i> Matthieu Felker - IT162 Portal</a>
             </h1>
             <nav>
                 <ul class="topnav" id="myTopnav">
+
                     <li><a href="index.php" class="selected">Home</a></li>
                     <li><a href="big/index.php">Big</a></li>
                     <li><a href="aia.php">AIA</a></li>
@@ -34,55 +35,71 @@
         </header>
 
         <section>
-            <h2 class="pageID">Welcome</h2>
+
+            <pre class="welcomeheader desktop tablet phone">
+
+  __      __          ___                                        
+ /\ \  __/\ \        /\_ \                                       
+ \ \ \/\ \ \ \     __\//\ \     ___    ___     ___ ___      __   
+  \ \ \ \ \ \ \  /'__`\\ \ \   /'___\ / __`\ /' __` __`\  /'__`\ 
+   \ \ \_/ \_\ \/\  __/ \_\ \_/\ \__//\ \L\ \/\ \/\ \/\ \/\  __/ 
+    \ \___x____/\ \____\/\____\ \____\ \____/\ \_\ \_\ \_\ \____\
+     \/__//___/  \/____/\/____/\/____/\/___/  \/_/\/_/\/_/\/____/
+
+
+            </pre>
+
             <img src="images/mattavi.gif" class="desktop" alt="matt" />
+
             <img src="images/polaroid.png" class="phone miniwrapper" alt="matt mtn" />
-            <div class="textbox">
+
+            <img class="textbox tablet" src="images/8BITAVI.gif" class="tablet" alt="8bit gif">
+
+
+        </section>
+
+
+
+        <aside>
+            <div class="textbox desktop">
+
                 <p><b>My name is Matthieu!</b></p>
                 <p>I am an Artist and Web Development student at Seattle Central College. Currently studying the ins and out of the IT field.</p>
                 <p>My goal is to further understand of different facets of development; Learn new and useful skills, become proficient with new tools, and combine those skills with my creative nature to unlock a new level for myself and not be held back
-                    by barriers.</p>
+                    by barriers.
+                </p>
+
+                <div class="github-card" data-github="Cachecode" data-width="100%" data-theme="default"></div>
+
+                <ul class="textbox quick-link nav-item">
+                    <small>
+                        <h3>Links</h3>
+                    </small>
+                    <li class="nav-item">
+                        <a class="quick-link active" href="https://www.linkedin.com/in/matthieufelker">Linkdin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="quick-link" href="https://github.com/Cachecode">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="quick-link" href="https://steamcommunity.com/id/CBNTC1/">Steam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="quick-link" href="https://www.reddit.com/user/Globes_">Reddit</a>
+                    </li>
+                    </li>
+
+                </ul>
+
+
+
             </div>
-        </section>
-
-        <aside>
-            <h2>Right Column</h2>
-            <img src="images/mtn.jpg" class="tablet miniwrapper" alt="matt polaroid" />
-            <p>Lorem Ipsum place holder text goes here for now</p>
-            <p>Lorem Ipsum place holder text goes here for now</p>
-            <div class="github-card" data-github="Cachecode" data-width="100%" data-theme="default"></div>
-            <ul class="textbox quick-link nav-item">
-                <small><h3>Links</h3></small>
-                <li class="nav-item">
-                    <a class="quick-link active" href="https://www.linkedin.com/in/matthieufelker">Linkdin</a>
-                </li>
-                <li class="nav-item">
-                    <a class="quick-link" href="#">Github</a>
-                </li>
-                <li class="nav-item">
-                    <a class="quick-link" href="#">Stackoverflow</a>
-                </li>
-                <li class="nav-item">
-                    <a class="quick-link" href="#">Tumblr</a>
-                </li>
-                <li class="nav-item">
-                    <a class="quick-link" href="#">Instagram</a>
-                </li>
-                <li class="nav-item">
-                    <a class="quick-link" href="#">Twitter</a>
-                </li>
-                <li class="nav-item">
-                    <a class="quick-link" href="#">Steam</a>
-                </li>
-                <li class="nav-item">
-                    <a class="quick-link" href="#">Reddit</a>
-                </li>
-                </li>
-            </ul>
-
-
         </aside>
+
+   
+
         <!-- END RIGHT COL -->
+
         <!-- START Footer -->
         <footer class="footerbox">
             <p><small>&copy; 2020-<?= date("Y") ?> by <a href="contact.php"><b>Matthieu Felker</b></a>, All Rights

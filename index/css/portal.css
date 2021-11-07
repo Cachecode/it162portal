@@ -1,6 +1,6 @@
 html {
     background-color: #ccc;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
@@ -109,10 +109,19 @@ footer {
     border-radius: 7px;
     margin-top: 10px;
     box-shadow: rgb(143, 142, 142) 0 0 5px 2px;
+    margin-inline: auto;
+    max-width: 80%;
 }
 
 h3 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.mailbox {
+    float: right;
+    font-size: 1vw;
+    font-weight: bolder;
+    padding: 5%;
 }
 
 
@@ -122,17 +131,24 @@ h3 {
 /* DESKTOP */
 
 @media all and (min-width:1400px) {
+    html {
+        width: 95%;
+    }
     main.wrapper {
         width: 80%;
         margin: auto;
     }
+    .welcomeheader {
+        font-size: 12px;
+        font-weight: bolder;
+    }
     section {
-        width: 33%;
+        width: 40%;
         float: left;
-        padding: 3%;
+        padding: 5%;
     }
     aside {
-        width: 34%;
+        width: 40%;
         float: right;
         padding: 5%;
     }
@@ -160,10 +176,14 @@ h3 {
     .logo {
         margin-right: 2%;
     }
+    .welcomeheader {
+        font-size: 9px;
+        font-weight: bolder;
+    }
     section {
-        width: 44%;
+        width: 40%;
         float: left;
-        margin-left: 5%;
+        padding: 5%;
     }
     .miniwrapper {
         background-color: rgb(235, 231, 231);
@@ -179,13 +199,13 @@ h3 {
     aside {
         width: 35%;
         float: right;
-        margin-right: 10%;
         margin-bottom: 5%;
+        padding: 5%;
     }
     img.tablet {
-        width: 100%;
         display: inline-block;
-        padding: 5%;
+        width: -webkit-fill-available;
+        border-radius: 7px;
     }
     img.desktop,
     img.phone {
@@ -207,6 +227,17 @@ h3 {
         margin: 10%;
         text-align: center;
     }
+    .welcomeheader {
+        font-size: 8px;
+        font-weight: bolder;
+    }
+    .mailbox {
+        font-size: 1vw;
+    }
+    .mailbox-container {
+        background-color: #ccc;
+        border: 1px solid black;
+    }
     .logo {
         margin-right: 10%;
         float: left;
@@ -223,7 +254,7 @@ h3 {
         padding: 10px;
     }
     img.phone {
-        width: 45%;
+        max-width: 23%;
         display: inline-block;
         padding: 2%;
         float: left;
@@ -234,11 +265,109 @@ h3 {
         padding: 5%;
     }
     section {
-        margin: 10%;
-        float: left;
+        margin: 1%;
+        padding: 5%;
     }
     aside {
         margin: 10%;
-        float: right;
     }
 }
+
+
+/* form flex box begin */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: rgb(143 142 142) 0 0 5px 2px;
+    background-color: #ccc;
+    padding: 5%;
+    border-radius: 7px;
+    text-decoration: none;
+    list-style-type: none;
+    color: black
+}
+
+.form-header {
+    text-align: center;
+    text-shadow: rgb(187, 187, 187) 1px 2px 2px;
+    border-bottom: 2px solid black;
+}
+
+.container * {
+    box-sizing: border-box;
+}
+
+.flex-outer,
+.flex-inner {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;
+}
+
+.flex-outer>li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.flex-outer>li>label,
+.flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+
+.flex-outer>li>label+*,
+.flex-inner {
+    flex: 1 0 220px;
+}
+
+.flex-outer li p {
+    margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+    padding: 15px;
+    border: none;
+}
+
+.flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+}
+
+.flex-inner li {
+    width: 100px;
+}
+
+
+/* form flex box end */

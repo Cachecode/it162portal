@@ -43,12 +43,16 @@ ul.topnav li a {
 /* quick links on homepage */
 
 ul.quick-link {
-    background-color: #333;
-    padding: 5px;
+    border: 1px solid #fff;
+    padding: 10px;
+    background-color: #ccc;
+    opacity: 0.7;
     border-radius: 7px;
     text-decoration: none;
     list-style-type: none;
     text-align: center;
+    margin-bottom: 5%;
+    color: #333;
 }
 
 a.quick-link {
