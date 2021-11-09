@@ -1,3 +1,4 @@
+<?php include 'php/portal-config.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,18 +6,25 @@
     <title>Matthieu Felker's contact page</title>
     <meta charset='utf-8' />
     <meta name='robots' content="noindex,nofollow" />
-    <meta name='viewport' conent='width=device-width' />
+    <meta name='viewport' content='width=device-width' />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/portal.css" />
     <link rel="stylesheet" href="css/forms.css" />
 </head>
 
+
+
 <body>
+
     <!-- START WRAPPER -->
+
+     
     <main class="wrapper">
+
         <header class="header">
+
             <h1>
-                <a href="index.php"><img src="images/logo.png" class="logo floating" alt="Home Logo"></i> Matthieu Felker - IT162 Portal</a>
+                <a href="index.php"><img src=<?= $logo ?> class="logo floating" alt="Home Logo"></i> Matthieu Felker - IT162 Portal</a>
             </h1>
             <nav>
                 <ul class="topnav" id="myTopnav">
@@ -31,9 +39,19 @@
             </nav>
         </header>
 
-        <section class='formsection'>
+<!-- left column start-->
+
+
+
+
+<!-- start form -->
+
+        <section>
+
+
             <div class="formbox">
-                <h1>contact</h1>
+                
+
 
                 <?php
 
@@ -45,60 +63,88 @@
                 echo loadContact('simple.php');
 
                 ?>
+
             </div>
 
-            <div class="github-card" data-github="Cachecode" data-width="100%" data-theme="default"></div>
-            <ul class="textbox quick-link nav-item">
-                <small>
-                    <h3>Links</h3>
-                </small>
-                <li class="nav-item">
-                    <a class="quick-link active" href="https://www.linkedin.com/in/matthieufelker">Linkdin</a>
-                </li>
-                <li class="nav-item">
-                    <a class="quick-link" href="#">Github</a>
-                </li>
-                <li class="nav-item">
-                    <a class="quick-link" href="#">Stackoverflow</a>
-                </li>
-                <li class="nav-item">
-                    <a class="quick-link" href="#">Tumblr</a>
-                </li>
-                <li class="nav-item">
-                    <a class="quick-link" href="#">Instagram</a>
-                </li>
-                <li class="nav-item">
-                    <a class="quick-link" href="#">Twitter</a>
-                </li>
-                <li class="nav-item">
-                    <a class="quick-link" href="#">Steam</a>
-                </li>
-                <li class="nav-item">
-                    <a class="quick-link" href="#">Reddit</a>
-                </li>
-                </li>
-            </ul>
         </section>
 
-        <aside class='formaside'>
-            <h2>Right Column</h2>
+    
+<!-- end form -->
 
-            <a href="index.php"><img src="images/logo.png" class="contactlogo floating" alt="Home Logo"></i>
-
-
-                <p>Lorem Ipsum place holder text goes here for now</p>
-                <p>Lorem Ipsum place holder text goes here for now</p>
+<!-- left column end-->
 
 
 
+
+
+<!-- right column start-->
+
+<aside>
+            <div class="textbox desktop">
+                
+            <pre class="mailbox">
+     ____
+    |    |
+    | .--'
+,.--| |-------------.
+|:\ | |   __       _ \
+|#| | |              |
+|#| |o|    Felker    |
+|#| '-'              |
+|#|                  |
+ \|__________________|
+   [_______________]
+              | |
+              | |
+              | |
+            \ | |  / 
+            \\| |//
+           \ \\ ///
+    ====================== 
+            </pre>
+            
+
+                <p><b>My name is Matthieu!</b></p>
+                <p>I am an Artist and Web Development student at Seattle Central College. Currently studying the ins and out of the IT field.</p>
+                <p>My goal is to further understand of different facets of development; Learn new and useful skills, become proficient with new tools, and combine those skills with my creative nature to unlock a new level for myself and not be held back
+                    by barriers.
+                </p>
+
+                <div class="github-card" data-github="Cachecode" data-width="100%" data-theme="default"></div>
+
+                <ul class="textbox quick-link nav-item">
+                    <small>
+                        <h3>Links</h3>
+                    </small>
+                    <li class="nav-item">
+                        <a class="quick-link active" href="https://www.linkedin.com/in/matthieufelker">Linkdin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="quick-link" href="https://github.com/Cachecode">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="quick-link" href="https://steamcommunity.com/id/CBNTC1/">Steam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="quick-link" href="https://www.reddit.com/user/Globes_">Reddit</a>
+                    </li>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
         </aside>
 
+<!-- right column end-->
 
 
 </body>
 
 
 <footer class="footerbox">
+    
     <p><small>&copy; 2020-<?= date("Y") ?> by <a href="contact.php"><b>Matthieu Felker</b></a>, All Rights
             Reserved ~
             <a href="https://validator.w3.org/nu/?doc=https://web-students.net/site48/it161/index.html" target="_blank"><b>Valid HTML</b></a> ~
