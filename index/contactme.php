@@ -103,12 +103,11 @@
     ====================== 
             </pre>
             
-
-                <p><b>My name is Matthieu!</b></p>
-                <p>I am an Artist and Web Development student at Seattle Central College. Currently studying the ins and out of the IT field.</p>
-                <p>My goal is to further understand of different facets of development; Learn new and useful skills, become proficient with new tools, and combine those skills with my creative nature to unlock a new level for myself and not be held back
-                    by barriers.
-                </p>
+                <b><p>Let's talk!</p></b>
+                <p> If getting in contact with me is something you would like to do,
+                look no further. Fill out the form on this page for a direct Email,
+                OR, check out any of my links. I am not hard to reach!</P><br>
+                <p>-Matt</p>
 
                 <div class="github-card" data-github="Cachecode" data-width="100%" data-theme="default"></div>
 
