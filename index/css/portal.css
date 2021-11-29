@@ -113,6 +113,13 @@ footer {
     max-width: 80%;
 }
 
+.article {
+    width: auto;
+    margin: auto;
+    display: inline;
+    text-align: center;
+}
+
 h3 {
     color: rgb(0, 0, 0);
 }
@@ -141,6 +148,17 @@ h3 {
     .welcomeheader {
         font-size: 12px;
         font-weight: bolder;
+    }
+    .flowheader {
+        font-size: 12px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .flowchart {
+        width: 640px;
+        height: 480px;
+        margin: 10px;
+        position: relative;
     }
     section {
         width: 40%;
