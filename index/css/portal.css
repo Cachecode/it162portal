@@ -149,17 +149,7 @@ h3 {
         font-size: 12px;
         font-weight: bolder;
     }
-    .flowheader {
-        font-size: 12px;
-        font-weight: bolder;
-        text-align: center;
-    }
-    .flowchart {
-        width: 640px;
-        height: 480px;
-        margin: 10px;
-        position: relative;
-    }
+
     section {
         width: 40%;
         float: left;

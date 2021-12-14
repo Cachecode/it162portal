@@ -24,10 +24,9 @@
                 <ul class="topnav" id="myTopnav">
 
                     <li><a href="index.php" class="selected">Home</a></li>
-                    <li><a href="big/index.php">Big</a></li>
                     <li><a href="aia.php">AIA</a></li>
                     <li><a href="flowchart.php">Flowchart/Layout</a></li>
-                    <li><a href="fp/index.php">Final Project</a></li>
+                    <li><a href="http://bloomsalon.dreamhosters.com/">Final Project</a></li>
                     <li><a href="contactme.php">Contact Matthieu</a></li>
                     <li class="icon"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a> </li>
                 </ul>
