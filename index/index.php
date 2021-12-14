@@ -15,23 +15,22 @@
 
 <body>
     <!-- START WRAPPER -->
+
     <main class="wrapper">
         <header class="header">
             <h1>
-                <a href="index.php"><img src=<?= $logo ?> class="logo floating" alt="Home Logo"></i> Matthieu Felker - IT162 Portal</a>
+                <a href="index.php"><img src=<?= $logo ?> class="logo floating" alt="Home Logo"></i> Matthieu Felker -
+                    IT162 Portal</a>
             </h1>
             <nav>
                 <ul class="topnav" id="myTopnav">
-
-                    <li><a href="index.php" class="selected">Home</a></li>
-                    <li><a href="aia.php">AIA</a></li>
-                    <li><a href="flowchart.php">Flowchart/Layout</a></li>
-                    <li><a href="http://bloomsalon.dreamhosters.com/">Final Project</a></li>
-                    <li><a href="contactme.php">Contact Matthieu</a></li>
+                    <?=makeLinks($nav1)?>
                     <li class="icon"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a> </li>
                 </ul>
             </nav>
+
         </header>
+
 
         <section>
 
