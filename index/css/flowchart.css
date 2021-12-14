@@ -1,0 +1,47 @@
+.flowbox {
+    background-color: #ccc;
+    padding: 5%;
+    border-radius: 7px;
+    margin-top: 10px;
+    box-shadow: rgb(143, 142, 142) 0 0 5px 2px;
+    margin-inline: auto;
+    max-width: 80%;
+}
+
+.flowchart {
+    display: flex;
+}
+
+.bloomflowchart {
+    width: 100%;
+}
+
+.flowtextbox {
+    max-width: fit-content;
+    display: inline-flexbox;
+    background-color: #ccc;
+    padding: 1%;
+    border-radius: 7px;
+    box-shadow: rgb(143, 142, 142) 0 0 5px 2px;
+    margin: 3em;
+}
+
+.about-layout {
+    float: left;
+    margin: 3em;
+    background-color: #ccc;
+    padding: 5%;
+    border-radius: 7px;
+    margin-top: 10px;
+    box-shadow: rgb(143, 142, 142) 0 0 5px 2px;
+}
+
+.goals-layout {
+    float: right;
+    margin: 3em;
+    background-color: #ccc;
+    padding: 5%;
+    border-radius: 7px;
+    margin-top: 10px;
+    box-shadow: rgb(143, 142, 142) 0 0 5px 2px;
+}

@@ -113,6 +113,13 @@ footer {
     max-width: 80%;
 }
 
+.article {
+    width: auto;
+    margin: auto;
+    display: inline;
+    text-align: center;
+}
+
 h3 {
     color: rgb(0, 0, 0);
 }
@@ -142,6 +149,7 @@ h3 {
         font-size: 12px;
         font-weight: bolder;
     }
+
     section {
         width: 40%;
         float: left;
