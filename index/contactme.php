@@ -1,42 +1,40 @@
-<?php include 'php/portal-config.php' ?>
+<?php include 'php/portal-config.php'?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>Matthieu Felker's contact page</title>
-    <meta charset='utf-8' />
-    <meta name='robots' content="noindex,nofollow" />
-    <meta name='viewport' content='width=device-width' />
+    <title> <?= $title ?> </title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/6a71565c22.js"></script>
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/portal.css" />
-    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/form.css" />
 </head>
-
 
 
 <body>
 
     <!-- START WRAPPER -->
 
-     
+
     <main class="wrapper">
-
         <header class="header">
-
             <h1>
-                <a href="index.php"><img src=<?= $logo ?> class="logo floating" alt="Home Logo"></i> Matthieu Felker - IT162 Portal</a>
+                <a href="index.php"><img src=<?= $logo ?> class="logo floating" alt="Home Logo"></i> Matthieu Felker -
+                    IT162 Portal</a>
             </h1>
             <nav>
                 <ul class="topnav" id="myTopnav">
-                    <li><a href="index.php">Home</a></li>               
-                    <li><a href="aia.php">AIA</a></li>
-                    <li><a href="flowchart.php">Flowchart/Layout</a></li>
-                    <li><a href="http://bloomsalon.dreamhosters.com">Final Project</a></li>
-                    <li><a href="contactme.php" class="selected">Contact Matthieu</a></li>
+                    <?=makeLinks($nav1)?>
                     <li class="icon"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a> </li>
                 </ul>
             </nav>
+
         </header>
+
 
 <!-- left column start-->
 
